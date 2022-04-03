@@ -26,21 +26,24 @@ namespace CSharp_HW_1
             Console.WriteLine("(6) If20()");
             Console.WriteLine("(7) If23()");
             Console.WriteLine("(8) If26()");
-            string str;
-            str = Console.ReadLine();
-            int choise = Convert.ToInt32(str);
-            return choise;
+            int choice = Convert.ToInt32(Console.ReadLine());
+            if (choice == 0)
+            {
+                Environment.Exit(0);
+            }
+               
+            return choice;
         }
 
         static void MenuAction()
         {
-            Menu();
+            int choice = Menu();
             
 
-            while (Menu() != 0)
+            while (choice != 0)
             {
 
-                switch (Menu())
+                switch (choice)
                 {
                     case 1:
                         {
