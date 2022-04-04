@@ -29,6 +29,7 @@ namespace CSharp_HW_1
             int choice = Convert.ToInt32(Console.ReadLine());
             if (choice == 0)
             {
+                //Выход из программы
                 Environment.Exit(0);
             }
                
@@ -129,14 +130,18 @@ namespace CSharp_HW_1
         {
             int m, k;
             string str;
-            Console.Write("Введите колличество дней года от 1 до 365: ");
+            Console.Write("Введите колличество дней с начала года от 1 до 365: ");
 
             //сохранение считанной с консоли строки в переменную
             str = Console.ReadLine();
             //конвертация введенной строки в целочисленный тип и присваивание сконвертированного значения переменной k
             k = Convert.ToInt32(str);
+            
+            
             //для определения номера дня недели вычислим остаток от деления на 7 (так как в неделе 7 дней)
             m = k % 7;
+            
+            
 
             switch (m)
             {
@@ -186,15 +191,15 @@ namespace CSharp_HW_1
             string str;
             int A, B, C, R1, R2, K, K2;
 
-            Console.Write("A:");
+            Console.Write("Введите целое число A:");
             str=Console.ReadLine();
             A = Convert.ToInt32(str);
 
-            Console.Write("B:");
+            Console.Write("Введите целое число B:");
             str = Console.ReadLine();
             B = Convert.ToInt32(str);
 
-            Console.Write("C:");
+            Console.Write("Введите целое число C:");
             str = Console.ReadLine();
             C = Convert.ToInt32(str);
 
@@ -203,7 +208,7 @@ namespace CSharp_HW_1
             K = R1/R2;
             K2 = R1 - (K * R2);
 
-            Console.WriteLine($"Колличесво квадратов = {K}");
+            Console.WriteLine($"Колличесво квадратов  = {K}");
             Console.WriteLine($"Площадь незаполненная квадратами = {K2}");
         }
 
@@ -414,16 +419,16 @@ namespace CSharp_HW_1
 
             if(x <= 0)
             {
-                Console.WriteLine($"F(x) = {(-1) * x} ");
+                Console.WriteLine($"Значение функции F(x) = {(-1) * x} ");
             }
 
             if (x>0 && x < 2)
             {
-                Console.WriteLine($"F(x) = {Math.Sqrt(x)} ");
+                Console.WriteLine($"Значение функции F(x) = {Math.Sqrt(x)} ");
             }
             if (x >= 2)
             {
-                Console.WriteLine($"F(x) = {4} ");
+                Console.WriteLine($"Значение функции F(x) = {4} ");
             }
         }
     }
