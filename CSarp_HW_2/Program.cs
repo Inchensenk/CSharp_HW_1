@@ -17,20 +17,21 @@ namespace CSarp_HW_2
         {
 
 
-            Console.BackgroundColor = ConsoleColor.Green;
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.Clear();
             Console.WriteLine("Выберите действие: ");
-            Console.WriteLine("(0) Выход из программы");
-            Console.WriteLine("(1) Case10()");
-            Console.WriteLine("(2) Case15()");
-            Console.WriteLine("(3) For17()");
-            Console.WriteLine("(4) For38()");
-            Console.WriteLine("(5) While26()");
-            Console.WriteLine("(6) While28()");
-            Console.WriteLine("(7) Minmax25()");
-            Console.WriteLine("(8) Array16()");
-            Console.WriteLine("(9) Array41()");
+            Console.WriteLine(" (0) Выход из программы");
+            Console.WriteLine(" (1) Case10()");
+            Console.WriteLine(" (2) Case15()");
+            Console.WriteLine(" (3) Case15_1()");
+            Console.WriteLine(" (4) For17()");
+            Console.WriteLine(" (5) For38()");
+            Console.WriteLine(" (6) While26()");
+            Console.WriteLine(" (7) While28()");
+            Console.WriteLine(" (8) Minmax25()");
+            Console.WriteLine(" (9) Array16()");
+            Console.WriteLine("(10) Array41()");
             int choice = Convert.ToInt32(Console.ReadLine());
             if (choice == 0)
             {
@@ -71,7 +72,7 @@ namespace CSarp_HW_2
                     case 3:
                         {
                             Console.Clear();
-                            For17();
+                            Case15_1();
                             Console.ReadKey();
                             Console.Clear();
                             MenuAction();
@@ -80,7 +81,7 @@ namespace CSarp_HW_2
                     case 4:
                         {
                             Console.Clear();
-                            For38();
+                            For17();
                             Console.ReadKey();
                             Console.Clear();
                             MenuAction();
@@ -89,7 +90,7 @@ namespace CSarp_HW_2
                     case 5:
                         {
                             Console.Clear();
-                            While26();
+                            For38();
                             Console.ReadKey();
                             Console.Clear();
                             MenuAction();
@@ -98,7 +99,7 @@ namespace CSarp_HW_2
                     case 6:
                         {
                             Console.Clear();
-                            While28();
+                            While26();
                             Console.ReadKey();
                             Console.Clear();
                             MenuAction();
@@ -107,7 +108,7 @@ namespace CSarp_HW_2
                     case 7:
                         {
                             Console.Clear();
-                            Minmax25();
+                            While28();
                             Console.ReadKey();
                             Console.Clear();
                             MenuAction();
@@ -116,13 +117,22 @@ namespace CSarp_HW_2
                     case 8:
                         {
                             Console.Clear();
-                            Array16();
+                            Minmax25();
                             Console.ReadKey();
                             Console.Clear();
                             MenuAction();
                         }
                         break;
                     case 9:
+                        {
+                            Console.Clear();
+                            Array16();
+                            Console.ReadKey();
+                            Console.Clear();
+                            MenuAction();
+                        }
+                        break;
+                    case 10:
                         {
                             Console.Clear();
                             Array41();
@@ -390,81 +400,109 @@ namespace CSarp_HW_2
             }
         }
 
-        //static void Case15_1()
-        //{
-        //    int choise;
-        //    char cardSuit;
-        //    Console.WriteLine("1 — пики, 2 — трефы, 3 — бубны, 4 — червы");
-        //    Console.WriteLine("Выберите масть карты: ");
-        //    Console.WriteLine(">>");
-        //    choise = Convert.ToInt32(Console.ReadLine());
+        static void Case15_1()
+        {
+            int choise;
+            char cardSuit=' ';
+            Console.WriteLine("1 — \u2660\n2 — \u2663\n3 — \u2666\n4 — \u2665");
+            Console.WriteLine("Выберите масть карты: ");
+            Console.WriteLine(">>");
+            choise = Convert.ToInt32(Console.ReadLine());
 
-        //    if (choise > 4 || choise < 1)
-        //    {
-        //        while (true)
-        //        {
-        //            Console.WriteLine("Масть карты выбрана неверно, введите ещё раз!");
-        //            Console.WriteLine("1 — пики, 2 — трефы, 3 — бубны, 4 — червы");
-        //            Console.WriteLine("Выберите масть карты: ");
-        //            Console.WriteLine(">>");
-        //            choise = Convert.ToInt32(Console.ReadLine());
-        //            if (choise <= 4 && choise >= 1)
-        //            {
-        //                break;
-        //            }
-        //        }
-        //    }
+            if (choise > 4 || choise < 1)
+            {
+                while (true)
+                {
+                    Console.WriteLine("Масть карты выбрана неверно, введите ещё раз!");
+                    Console.WriteLine("1 — пики, 2 — трефы, 3 — бубны, 4 — червы");
+                    Console.WriteLine("Выберите масть карты: ");
+                    Console.WriteLine(">>");
+                    choise = Convert.ToInt32(Console.ReadLine());
+                    if (choise <= 4 && choise >= 1)
+                    {
+                        break;
+                    }
+                }
+            }
 
-        //    if (choise == 1)
-        //    {
-        //        cardSuit = '\u2660';
-        //    }
-        //    else if (choise == 2)
-        //    {
-        //        cardSuit = '\u2663';
-        //    }
-        //    else if (choise == 3)
-        //    {
-        //        cardSuit = '\u2666';
-        //    }
-        //    else if (choise == 4)
-        //    {
-        //        cardSuit = '\u2665';
-        //    }
+            if (choise == 1)
+            {
+                cardSuit = '\u2660';
+            }
+            else if (choise == 2)
+            {
+                cardSuit = '\u2663';
+            }
+            else if (choise == 3)
+            {
+                cardSuit = '\u2666';
+            }
+            else if (choise == 4)
+            {
+                cardSuit = '\u2665';
+            }
 
-        //    int numcard;
-        //    string[] cardValues = { "А", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
-        //    Console.WriteLine("Введите значение карты:");
-        //    for (int i = 0; i < 13; i++)
-        //    {
-        //        Console.WriteLine($"{i+1} - {cardValues[i]}");
-        //    }
-        //    Console.WriteLine(">>");
-        //    numcard = Convert.ToInt32(Console.ReadLine());
-        //    if (numcard>13 || numcard<1)
-        //    {
-        //        while (true)
-        //        {
-        //            Console.WriteLine("Значение карты выбрано неверно, введите ещё раз!");
-        //            Console.WriteLine("Введите значение карты:");
-        //            for (int i = 0; i < 13; i++)
-        //            {
-        //                Console.WriteLine($"{i + 1} - {cardValues[i]}");
-        //            }
-        //            Console.WriteLine(">>");
-        //            numcard = Convert.ToInt32(Console.ReadLine());
-        //            if (numcard <=13 && numcard>=1)
-        //            {
-        //                break;
-        //            }
-        //        }
-        //    }
+            int numcard;
+            string[] cardValues = { "А", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
+            Console.WriteLine("Введите значение карты:");
+            for (int i = 0; i < 13; i++)
+            {
+                Console.WriteLine($"{i+1} - {cardValues[i]}");
+            }
+            Console.WriteLine(">>");
+            numcard = Convert.ToInt32(Console.ReadLine());
+            if (numcard>13 || numcard<1)
+            {
+                while (true)
+                {
+                    Console.WriteLine("Значение карты выбрано неверно, введите ещё раз!");
+                    Console.WriteLine("Введите значение карты:");
+                    for (int i = 0; i < 13; i++)
+                    {
+                        Console.WriteLine($"{i + 1} - {cardValues[i]}");
+                    }
+                    Console.WriteLine(">>");
+                    numcard = Convert.ToInt32(Console.ReadLine());
+                    if (numcard <=13 && numcard>=1)
+                    {
+                        break;
+                    }
+                }
+            }
+            Console.Clear();
+            Console.WriteLine("\t* * * * * * *");
+            Console.WriteLine($"\t*{cardValues[numcard-1]} \t    *");
+            Console.WriteLine($"\t*{cardSuit} \t    *");
+            Console.WriteLine("\t*\t    *");
+            Console.WriteLine($"\t*     {cardSuit}     *");
+            Console.WriteLine("\t*\t    *");
+            Console.WriteLine($"\t*          {cardSuit}*");
 
-        //    Console.WriteLine("\t* * * * * *");
-        //    Console.WriteLine($"\t* {cardValues[numcard-1]} \t *");
-        //    Console.WriteLine($"\t* {cardSuit} \t *");
+            if(cardValues[numcard-1] == "10")
+            {
+                Console.WriteLine($"\t*         {cardValues[numcard-1]}*");
+            }
+            else
+            {
+                Console.WriteLine($"\t*          {cardValues[numcard-1]}*");
+            }
+            
+            Console.WriteLine("\t* * * * * * *");
 
-        //}
+            choise = 0;
+            Console.WriteLine("\nЖелаете продолжить?");
+            Console.WriteLine("0 - Нет, возврат в главное меню, 1 - Да");
+            Console.WriteLine(">>");
+            choise=Convert.ToInt32(Console.ReadLine());
+            if(choise == 1)
+            {
+                Case15_1();
+            }
+            else
+            {
+                MenuAction();
+            }
+        }
 
         /*
         For17. Дано вещественное число A и целое число N (> 0). 
