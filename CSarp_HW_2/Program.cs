@@ -319,55 +319,55 @@ namespace CSarp_HW_2
             {
                 case 6:
                     {
-                        Console.Write("шестёрка ");
+                        Console.Write("Шестёрка ");
                     }
                     break;
 
                 case 7:
                     {
-                        Console.Write("семёрка ");
+                        Console.Write("Семёрка ");
                     }
                     break;
 
                 case 8:
                     {
-                        Console.Write("восьмёрка ");
+                        Console.Write("Восьмёрка ");
                     }
                     break;
 
                 case 9:
                     {
-                        Console.Write("девятка ");
+                        Console.Write("Девятка ");
                     }
                     break;
 
                 case 10:
                     {
-                        Console.Write("десятка ");
+                        Console.Write("Десятка ");
                     }
                     break;
 
                 case 11:
                     {
-                        Console.Write("валет ");
+                        Console.Write("Валет ");
                     }
                     break;
 
                 case 12:
                     {
-                        Console.Write("дама ");
+                        Console.Write("Дама ");
                     }
                     break;
 
                 case 13:
                     {
-                        Console.Write("король ");
+                        Console.Write("Король ");
                     }
                     break;
 
                 case 14:
                     {
-                        Console.Write("туз ");
+                        Console.Write("Туз ");
                     }
                     break;
             }
