@@ -9,7 +9,9 @@ namespace CSarp_HW_3_Timer
     abstract class Menu
     {
         public string StrMenu { get; set; }
-
+        /// <summary>
+        /// Вывод меню
+        /// </summary>
         public void PrintMenu()
         {
             Console.WriteLine(StrMenu);

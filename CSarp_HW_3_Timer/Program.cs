@@ -28,11 +28,6 @@ namespace CSarp_HW_3_Timer
 {
     internal class Program
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param str=""
-        /// <param name="args"></param>
         static void Main(string[] args)
         {
 
