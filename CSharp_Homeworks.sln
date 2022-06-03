@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_HW_2", "CSarp_HW_2\C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSarp_HW_3_Timer", "CSarp_HW_3_Timer\CSarp_HW_3_Timer.csproj", "{E5ADFE0A-75CB-4B1A-8B04-6D4E69F11EB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_HW_4_Students", "CSharp_HW_4_Students\CSharp_HW_4_Students.csproj", "{CE63D3A9-C676-4015-A48A-8067A6454A5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E5ADFE0A-75CB-4B1A-8B04-6D4E69F11EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5ADFE0A-75CB-4B1A-8B04-6D4E69F11EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5ADFE0A-75CB-4B1A-8B04-6D4E69F11EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE63D3A9-C676-4015-A48A-8067A6454A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE63D3A9-C676-4015-A48A-8067A6454A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE63D3A9-C676-4015-A48A-8067A6454A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE63D3A9-C676-4015-A48A-8067A6454A5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
